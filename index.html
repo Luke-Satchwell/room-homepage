@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Room homepage</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <button class="menu-toggle btn">
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="mobile menu toggle button"
+        />
+      </button>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="room brand logo" />
+      </div>
+      <ul class="navbar-nav">
+        <li><a href="#" class="nav-link">home</a></li>
+        <li><a href="#" class="nav-link">shop</a></li>
+        <li><a href="#" class="nav-link">about</a></li>
+        <li><a href="#" class="nav-link">contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="slide">
+        <div class="slide-img"></div>
+        <div class="slide-text">
+          <div class="slide-text-container text-group">
+            <h1 class="slide-title"></h1>
+            <p class="slide-desc"></p>
+            <a href="#" class="shop-now">
+              shop now
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow pointing to the right"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="slide-btns">
+          <button type="button" class="prev-btn btn">
+            <img src="./images/icon-angle-left.svg" alt="previous button" />
+          </button>
+          <button type="button" class="next-btn btn">
+            <img src="./images/icon-angle-right.svg" alt="next button" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="dark-img">
+          <!-- <img
+            src="./images/image-about-dark.jpg"
+            alt="dark lighting image of table and chairs"
+          /> -->
+        </div>
+        <div class="about-text">
+          <div class="about-text-container text-group">
+            <h2 class="about-heading">About our furniture</h2>
+            <p>
+              Our multifunctional collection blends design and function to suit
+              your individual taste. Make each room unique, or pick a cohesive
+              theme that best express your interests and what inspires you. Find
+              the furniture pieces you need, from traditional to contemporary
+              styles or anything in between. Product specialists are available
+              to help you create your dream space.
+            </p>
+          </div>
+        </div>
+        <div class="light-img">
+          <!-- <img
+            src="./images/image-about-light.jpg"
+            alt="very bright image of a chair"
+          /> -->
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

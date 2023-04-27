@@ -1,0 +1,235 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  letter-spacing: -0.333px;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*-----------------*/
+/*     NAVBAR      */
+/*-----------------*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 48px;
+  left: 24px;
+  z-index: 10;
+
+  width: 50%;
+  height: 14px;
+}
+
+.navbar-nav {
+  display: none;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.menu-toggle {
+  background: none;
+  cursor: pointer;
+}
+
+/*-----------------*/
+/*      SLIDE      */
+/*-----------------*/
+.slide {
+  position: relative;
+}
+
+.slide-img {
+  height: 360px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slide-title {
+  font-size: clamp(2.5rem, 2.3239rem + 0.7512vw, 3rem);
+  font-weight: 600;
+  line-height: clamp(2.3125rem, 2.1585rem + 0.6573vw, 2.75rem);
+  letter-spacing: clamp(-0.104166875rem, -0.0968rem + -0.0313vw, -0.125rem);
+}
+
+.slide-text {
+  padding: 60px 0 72px;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slide-btns {
+  display: flex;
+  align-items: center;
+  gap: 0;
+
+  position: absolute;
+  right: 0;
+  top: 304px;
+}
+
+/*-----------------*/
+/*      ABOUT      */
+/*-----------------*/
+
+.about-text {
+  padding: 49px 0 41px;
+}
+
+.about-heading {
+  font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+  /* font-size: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem); */
+  font-weight: 700;
+  letter-spacing: 5.83333px;
+  line-height: 1.375rem;
+}
+
+.dark-img {
+  background-image: url("./images/image-about-dark.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 238px;
+}
+
+.light-img {
+  background-image: url("./images/image-about-light.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 227px;
+}
+
+/*-----------------*/
+/*     BUTTONS     */
+/*-----------------*/
+.btn {
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.next-btn,
+.prev-btn {
+  background-color: #000;
+
+  height: 56px;
+  width: 56px;
+}
+
+.next-btn:hover,
+.prev-btn:hover {
+  background-color: #444444;
+}
+
+.shop-now {
+  margin-top: 36px;
+  color: #000;
+  letter-spacing: 0.78125rem;
+  text-transform: uppercase;
+}
+
+.shop-now img {
+  width: 40px;
+}
+
+.shop-now:hover {
+  filter: invert(73%) sepia(0%) saturate(5322%) hue-rotate(91deg)
+    brightness(89%) contrast(84%);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+  }
+
+  .slide-img {
+    height: 534px;
+  }
+
+  .slide-btns {
+    top: 478px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    width: 30%;
+    left: 64px;
+    top: 63px;
+  }
+
+  .slide {
+    display: flex;
+  }
+
+  .slide-img {
+    width: 60%;
+  }
+
+  .slide-text {
+    width: 40%;
+  }
+
+  .slide-btns {
+    left: 60%;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 40px; */
+    height: 266px;
+  }
+  .dark-img,
+  .light-img {
+    width: 30%;
+    height: 266px;
+    margin-bottom: 0;
+  }
+
+  .about-text {
+    width: 40%;
+  }
+}
