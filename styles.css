@@ -222,6 +222,14 @@ a {
     left: 60%;
   }
 
+  .slide-text-container {
+    width: 73%;
+  }
+
+  .about-text-container {
+    width: 87%;
+  }
+
   .about {
     display: flex;
     align-items: center;
